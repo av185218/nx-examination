@@ -1,0 +1,356 @@
+{
+  "nodes": {
+    "nested/nested/proj": {
+      "targets": {
+        "buildEnvironment": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all buildscript dependencies declared in root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :buildEnvironment",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "checkAll": {
+          "cache": true,
+          "dependsOn": [
+            "string-utils:check",
+            "number-utils:check",
+            "app:check"
+          ],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :checkAll",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "components": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the components produced by root project \u0027my-composite\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :components",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "createNodes": {
+          "cache": true,
+          "dependsOn": ["my-utils:createNodes", "my-app:createNodes"],
+          "metadata": {
+            "description": "Create nodes and dependencies for Nx",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :createNodes",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "dependencies": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all dependencies declared in root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependencies",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "dependencyInsight": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the insight into a specific dependency in root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependencyInsight",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "dependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependencyReport",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "dependentComponents": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependent components of components in root project \u0027my-composite\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependentComponents",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "help": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays a help message.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :help",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "htmlDependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates an HTML report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :htmlDependencyReport",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "init": {
+          "cache": true,
+          "metadata": {
+            "description": "Initializes a new Gradle build.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :init",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "javaToolchains": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the detected java toolchains.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :javaToolchains",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "kotlinDslAccessorsReport": {
+          "cache": true,
+          "metadata": {
+            "description": "Prints the Kotlin code for accessing the currently available project extensions and conventions.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :kotlinDslAccessorsReport",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "model": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configuration model of root project \u0027my-composite\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :model",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "outgoingVariants": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the outgoing variants of root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :outgoingVariants",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "prepareKotlinBuildScriptModel": {
+          "cache": true,
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :prepareKotlinBuildScriptModel",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "projectReport": {
+          "cache": true,
+          "dependsOn": [
+            "my-composite:taskReport",
+            "my-composite:dependencyReport",
+            "my-composite:propertyReport",
+            "my-composite:htmlDependencyReport"
+          ],
+          "metadata": {
+            "description": "Generates a report about your project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :projectReport",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "projectReportAll": {
+          "cache": true,
+          "dependsOn": [
+            "my-composite:projectReport",
+            "my-utils:projectReportAll",
+            "my-app:projectReportAll"
+          ],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :projectReportAll",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "projects": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the sub-projects of root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :projects",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "properties": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the properties of root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :properties",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "propertyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/properties.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your properties.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :propertyReport",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "resolvableConfigurations": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configurations that can be resolved in root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :resolvableConfigurations",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "run": {
+          "cache": true,
+          "dependsOn": ["app:run"],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :run",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "taskReport": {
+          "outputs": ["{projectRoot}/build/reports/project/tasks.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your tasks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :taskReport",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "tasks": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the tasks runnable from root project \u0027my-composite\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :tasks",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "updateDaemonJvm": {
+          "outputs": ["{projectRoot}/gradle/gradle-daemon-jvm.properties"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates or updates the Gradle Daemon JVM criteria.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :updateDaemonJvm",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        },
+        "wrapper": {
+          "outputs": [
+            "{projectRoot}/gradlew.bat",
+            "{projectRoot}/gradle/wrapper/gradle-wrapper.jar",
+            "{projectRoot}/gradle/wrapper/gradle-wrapper.properties",
+            "{projectRoot}/gradlew"
+          ],
+          "cache": true,
+          "metadata": {
+            "description": "Generates Gradle wrapper files.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :wrapper",
+          "options": {
+            "cwd": "nested/nested/proj"
+          }
+        }
+      },
+      "metadata": {
+        "targetGroups": {
+          "help": [
+            "buildEnvironment",
+            "dependencies",
+            "dependencyInsight",
+            "help",
+            "javaToolchains",
+            "kotlinDslAccessorsReport",
+            "outgoingVariants",
+            "projects",
+            "properties",
+            "resolvableConfigurations",
+            "tasks"
+          ],
+          "Nx Custom": ["createNodes"],
+          "Build Setup": ["init", "updateDaemonJvm", "wrapper"],
+          "reporting": ["projectReport"]
+        },
+        "technologies": ["Gradle"]
+      },
+      "name": "my-composite"
+    }
+  },
+  "dependencies": [
+    {
+      "source": "nested/nested/proj",
+      "target": "projectRoot/my-app",
+      "sourceFile": "projectRoot/build.gradle.kts"
+    },
+    {
+      "source": "nested/nested/proj",
+      "target": "projectRoot/my-utils",
+      "sourceFile": "projectRoot/build.gradle.kts"
+    }
+  ]
+}

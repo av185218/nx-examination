@@ -1,0 +1,3339 @@
+{
+  "nodes": {
+    "proj": {
+      "targets": {
+        "buildEnvironment": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all buildscript dependencies declared in root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :buildEnvironment",
+          "options": { "cwd": "proj" }
+        },
+        "components": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the components produced by root project \u0027gradle-tutorial\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :components",
+          "options": { "cwd": "proj" }
+        },
+        "createNodes": {
+          "cache": true,
+          "metadata": {
+            "description": "Create nodes and dependencies for Nx",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :createNodes",
+          "options": { "cwd": "proj" }
+        },
+        "dependencies": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all dependencies declared in root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependencies",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyInsight": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the insight into a specific dependency in root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependencyInsight",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "dependentComponents": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependent components of components in root project \u0027gradle-tutorial\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :dependentComponents",
+          "options": { "cwd": "proj" }
+        },
+        "help": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays a help message.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :help",
+          "options": { "cwd": "proj" }
+        },
+        "htmlDependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates an HTML report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :htmlDependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "init": {
+          "cache": true,
+          "metadata": {
+            "description": "Initializes a new Gradle build.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :init",
+          "options": { "cwd": "proj" }
+        },
+        "javaToolchains": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the detected java toolchains.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :javaToolchains",
+          "options": { "cwd": "proj" }
+        },
+        "model": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configuration model of root project \u0027gradle-tutorial\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :model",
+          "options": { "cwd": "proj" }
+        },
+        "outgoingVariants": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the outgoing variants of root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :outgoingVariants",
+          "options": { "cwd": "proj" }
+        },
+        "prepareKotlinBuildScriptModel": {
+          "cache": true,
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :prepareKotlinBuildScriptModel",
+          "options": { "cwd": "proj" }
+        },
+        "projectReport": {
+          "cache": true,
+          "dependsOn": [
+            "gradle-tutorial:taskReport",
+            "gradle-tutorial:dependencyReport",
+            "gradle-tutorial:propertyReport",
+            "gradle-tutorial:htmlDependencyReport"
+          ],
+          "metadata": {
+            "description": "Generates a report about your project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :projectReport",
+          "options": { "cwd": "proj" }
+        },
+        "projectReportAll": {
+          "cache": true,
+          "dependsOn": [
+            "library:projectReport",
+            "application3:projectReport",
+            "application2:projectReport",
+            "application:projectReport",
+            "gradle-tutorial:projectReport"
+          ],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :projectReportAll",
+          "options": { "cwd": "proj" }
+        },
+        "projects": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the sub-projects of root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :projects",
+          "options": { "cwd": "proj" }
+        },
+        "properties": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the properties of root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :properties",
+          "options": { "cwd": "proj" }
+        },
+        "propertyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/properties.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your properties.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :propertyReport",
+          "options": { "cwd": "proj" }
+        },
+        "resolvableConfigurations": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configurations that can be resolved in root project \u0027gradle-tutorial\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :resolvableConfigurations",
+          "options": { "cwd": "proj" }
+        },
+        "taskReport": {
+          "outputs": ["{projectRoot}/build/reports/project/tasks.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your tasks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :taskReport",
+          "options": { "cwd": "proj" }
+        },
+        "tasks": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the tasks runnable from root project \u0027gradle-tutorial\u0027 (some of the displayed tasks may belong to subprojects).",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :tasks",
+          "options": { "cwd": "proj" }
+        },
+        "updateDaemonJvm": {
+          "outputs": ["{projectRoot}/gradle/gradle-daemon-jvm.properties"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates or updates the Gradle Daemon JVM criteria.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :updateDaemonJvm",
+          "options": { "cwd": "proj" }
+        },
+        "wrapper": {
+          "outputs": [
+            "{projectRoot}/gradlew.bat",
+            "{projectRoot}/gradle/wrapper/gradle-wrapper.jar",
+            "{projectRoot}/gradle/wrapper/gradle-wrapper.properties",
+            "{projectRoot}/gradlew"
+          ],
+          "cache": true,
+          "metadata": {
+            "description": "Generates Gradle wrapper files.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :wrapper",
+          "options": { "cwd": "proj" }
+        }
+      },
+      "metadata": {
+        "targetGroups": {
+          "help": [
+            "buildEnvironment",
+            "dependencies",
+            "dependencyInsight",
+            "help",
+            "javaToolchains",
+            "outgoingVariants",
+            "projects",
+            "properties",
+            "resolvableConfigurations",
+            "tasks"
+          ],
+          "Nx Custom": ["createNodes"],
+          "Build Setup": ["init", "updateDaemonJvm", "wrapper"],
+          "reporting": ["projectReport"]
+        },
+        "technologies": ["Gradle"]
+      },
+      "name": "gradle-tutorial"
+    },
+    "proj/application": {
+      "targets": {
+        "assemble": {
+          "cache": true,
+          "dependsOn": ["application:bootJar", "application:jar"],
+          "metadata": {
+            "description": "Assembles the outputs of this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:assemble",
+          "options": { "cwd": "proj" }
+        },
+        "bootBuildImage": {
+          "cache": true,
+          "dependsOn": ["application:bootJar"],
+          "metadata": {
+            "description": "Builds an OCI image of the application using the output of the bootJar task",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:bootBuildImage",
+          "options": { "cwd": "proj" }
+        },
+        "bootJar": {
+          "inputs": [
+            "{projectRoot}/build/tmp/bootJar/MANIFEST.MF",
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/application/DemoApplication.class",
+            "{projectRoot}/build/resources/main/application.properties",
+            "{workspaceRoot}/library/build/libs/library-0.0.1-SNAPSHOT.jar"
+          ],
+          "outputs": [
+            "{projectRoot}/build/libs/application-0.0.1-SNAPSHOT.jar"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar",
+            "application:resolveMainClassName"
+          ],
+          "metadata": {
+            "description": "Assembles an executable jar archive containing the main classes and their dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:bootJar",
+          "options": { "cwd": "proj" }
+        },
+        "bootRun": {
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar",
+            "application:resolveMainClassName"
+          ],
+          "metadata": {
+            "description": "Runs this project as a Spring Boot application.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:bootRun",
+          "options": { "cwd": "proj" }
+        },
+        "bootTestRun": {
+          "cache": true,
+          "dependsOn": [
+            "application:testClasses",
+            "application:compileTestJava",
+            "application:classes",
+            "application:compileJava",
+            "library:jar",
+            "application:resolveTestMainClassName"
+          ],
+          "metadata": {
+            "description": "Runs this project as a Spring Boot application using the test runtime classpath.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:bootTestRun",
+          "options": { "cwd": "proj" }
+        },
+        "build": {
+          "cache": true,
+          "dependsOn": ["application:check", "application:assemble"],
+          "metadata": {
+            "description": "Assembles and tests this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:build",
+          "options": { "cwd": "proj" }
+        },
+        "buildDependents": {
+          "cache": true,
+          "dependsOn": ["application:build"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects that depend on it.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:buildDependents",
+          "options": { "cwd": "proj" }
+        },
+        "buildEnvironment": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all buildscript dependencies declared in project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:buildEnvironment",
+          "options": { "cwd": "proj" }
+        },
+        "buildNeeded": {
+          "cache": true,
+          "dependsOn": ["application:build", "library:buildNeeded"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects it depends on.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:buildNeeded",
+          "options": { "cwd": "proj" }
+        },
+        "check": {
+          "cache": true,
+          "dependsOn": ["application:test"],
+          "metadata": {
+            "description": "Runs all checks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:check",
+          "options": { "cwd": "proj" }
+        },
+        "classes": {
+          "cache": true,
+          "dependsOn": [
+            "application:compileJava",
+            "application:processResources"
+          ],
+          "metadata": {
+            "description": "Assembles main classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:classes",
+          "options": { "cwd": "proj" }
+        },
+        "clean": {
+          "cache": true,
+          "metadata": {
+            "description": "Deletes the build directory.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:clean",
+          "options": { "cwd": "proj" }
+        },
+        "compileJava": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/application/DemoApplication.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/main",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/main",
+            "{projectRoot}/build/generated/sources/headers/java/main",
+            "{projectRoot}/build/tmp/compileJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": ["library:jar"],
+          "metadata": {
+            "description": "Compiles main Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:compileJava",
+          "options": { "cwd": "proj" }
+        },
+        "compileTestJava": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest10.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest7.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest6.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest3.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest2.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest9.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest5.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest4.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest8.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Compiles test Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:compileTestJava",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest10": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest10.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest10.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest10",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest7": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest7.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest7.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest7",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest6": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest6.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest6.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest6",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest3": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest3.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest3.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest3",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest2": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest2.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest2.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest2",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest9": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest9.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest9.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest9",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest5": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest5.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest5.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest5",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest4": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest4.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest4.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest4",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplicationTest8": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest8.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application/src/test/java/com/example/multimodule/application/DemoApplicationTest8.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test --tests DemoApplicationTest8",
+          "options": { "cwd": "proj" }
+        },
+        "ci": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest10.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest7.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest6.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest3.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest2.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest9.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest5.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest4.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplicationTest8.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            {
+              "target": "ci--DemoApplicationTest10",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest7",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest6",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest3",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest2",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest9",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest5",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest4",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplicationTest8",
+              "projects": "self",
+              "params": "forward"
+            }
+          ],
+          "metadata": {
+            "description": "Runs Gradle Tests in CI",
+            "technologies": ["Gradle"]
+          },
+          "options": { "cwd": "proj" },
+          "executor": "nx:noop"
+        },
+        "components": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the components produced by project \u0027:application\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:components",
+          "options": { "cwd": "proj" }
+        },
+        "dependencies": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all dependencies declared in project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:dependencies",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyInsight": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the insight into a specific dependency in project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:dependencyInsight",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyManagement": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependency management declared in project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:dependencyManagement",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:dependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "dependentComponents": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependent components of components in project \u0027:application\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:dependentComponents",
+          "options": { "cwd": "proj" }
+        },
+        "help": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays a help message.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:help",
+          "options": { "cwd": "proj" }
+        },
+        "htmlDependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates an HTML report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:htmlDependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "jar": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/application/DemoApplication.class",
+            "{projectRoot}/build/resources/main/application.properties",
+            "{projectRoot}/build/tmp/jar/MANIFEST.MF"
+          ],
+          "outputs": [
+            "{projectRoot}/build/libs/application-0.0.1-SNAPSHOT-plain.jar"
+          ],
+          "cache": true,
+          "dependsOn": ["application:classes", "application:compileJava"],
+          "metadata": {
+            "description": "Assembles a jar archive containing the classes of the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:jar",
+          "options": { "cwd": "proj" }
+        },
+        "javaToolchains": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the detected java toolchains.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:javaToolchains",
+          "options": { "cwd": "proj" }
+        },
+        "javadoc": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/application/DemoApplication.java"
+          ],
+          "outputs": ["{projectRoot}/build/docs/javadoc"],
+          "cache": true,
+          "dependsOn": [
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Generates Javadoc API documentation for the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:javadoc",
+          "options": { "cwd": "proj" }
+        },
+        "model": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configuration model of project \u0027:application\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:model",
+          "options": { "cwd": "proj" }
+        },
+        "outgoingVariants": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the outgoing variants of project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:outgoingVariants",
+          "options": { "cwd": "proj" }
+        },
+        "processResources": {
+          "inputs": ["{projectRoot}/src/main/resources/application.properties"],
+          "outputs": ["{projectRoot}/build/resources/main"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes main resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:processResources",
+          "options": { "cwd": "proj" }
+        },
+        "processTestResources": {
+          "outputs": ["{projectRoot}/build/resources/test"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes test resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:processTestResources",
+          "options": { "cwd": "proj" }
+        },
+        "projectReport": {
+          "cache": true,
+          "dependsOn": [
+            "application:taskReport",
+            "application:dependencyReport",
+            "application:propertyReport",
+            "application:htmlDependencyReport"
+          ],
+          "metadata": {
+            "description": "Generates a report about your project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:projectReport",
+          "options": { "cwd": "proj" }
+        },
+        "projectReportAll": {
+          "cache": true,
+          "dependsOn": ["application:projectReport"],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :application:projectReportAll",
+          "options": { "cwd": "proj" }
+        },
+        "projects": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the sub-projects of project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:projects",
+          "options": { "cwd": "proj" }
+        },
+        "properties": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the properties of project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:properties",
+          "options": { "cwd": "proj" }
+        },
+        "propertyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/properties.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your properties.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:propertyReport",
+          "options": { "cwd": "proj" }
+        },
+        "resolvableConfigurations": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configurations that can be resolved in project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:resolvableConfigurations",
+          "options": { "cwd": "proj" }
+        },
+        "resolveMainClassName": {
+          "outputs": ["{projectRoot}/build/resolvedMainClassName"],
+          "cache": true,
+          "dependsOn": ["application:classes", "application:compileJava"],
+          "metadata": {
+            "description": "Resolves the name of the application\u0027s main class.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:resolveMainClassName",
+          "options": { "cwd": "proj" }
+        },
+        "resolveTestMainClassName": {
+          "outputs": ["{projectRoot}/build/resolvedMainTestClassName"],
+          "cache": true,
+          "dependsOn": [
+            "application:testClasses",
+            "application:compileTestJava",
+            "application:classes",
+            "application:compileJava"
+          ],
+          "metadata": {
+            "description": "Resolves the name of the application\u0027s test main class.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:resolveTestMainClassName",
+          "options": { "cwd": "proj" }
+        },
+        "taskReport": {
+          "outputs": ["{projectRoot}/build/reports/project/tasks.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your tasks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:taskReport",
+          "options": { "cwd": "proj" }
+        },
+        "tasks": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the tasks runnable from project \u0027:application\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:tasks",
+          "options": { "cwd": "proj" }
+        },
+        "test": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest9.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest8.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest10.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest2.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest6.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest4.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest3.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest5.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplicationTest7.class"
+          ],
+          "outputs": [
+            "{projectRoot}/build/test-results/test/binary",
+            "{projectRoot}/build/reports/tests/test",
+            "{projectRoot}/build/test-results/test"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application:compileTestJava",
+            "application:testClasses",
+            "application:classes",
+            "application:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs the test suite.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:test",
+          "options": { "cwd": "proj" }
+        },
+        "testClasses": {
+          "cache": true,
+          "dependsOn": [
+            "application:processTestResources",
+            "application:compileTestJava"
+          ],
+          "metadata": {
+            "description": "Assembles test classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application:testClasses",
+          "options": { "cwd": "proj" }
+        }
+      },
+      "metadata": {
+        "targetGroups": {
+          "build": [
+            "assemble",
+            "bootBuildImage",
+            "bootJar",
+            "build",
+            "buildDependents",
+            "buildNeeded",
+            "classes",
+            "clean",
+            "jar",
+            "resolveMainClassName",
+            "resolveTestMainClassName",
+            "testClasses"
+          ],
+          "application": ["bootRun", "bootTestRun"],
+          "help": [
+            "buildEnvironment",
+            "dependencies",
+            "dependencyInsight",
+            "dependencyManagement",
+            "help",
+            "javaToolchains",
+            "outgoingVariants",
+            "projects",
+            "properties",
+            "resolvableConfigurations",
+            "tasks"
+          ],
+          "verification": ["check", "ci", "test"],
+          "documentation": ["javadoc"],
+          "reporting": ["projectReport"]
+        },
+        "technologies": ["Gradle"]
+      },
+      "name": "application"
+    },
+    "proj/application2": {
+      "targets": {
+        "assemble": {
+          "cache": true,
+          "dependsOn": ["application2:bootJar", "application2:jar"],
+          "metadata": {
+            "description": "Assembles the outputs of this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:assemble",
+          "options": { "cwd": "proj" }
+        },
+        "bootBuildImage": {
+          "cache": true,
+          "dependsOn": ["application2:bootJar"],
+          "metadata": {
+            "description": "Builds an OCI image of the application using the output of the bootJar task",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:bootBuildImage",
+          "options": { "cwd": "proj" }
+        },
+        "bootJar": {
+          "inputs": [
+            "{projectRoot}/build/tmp/bootJar/MANIFEST.MF",
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/application/DemoApplication2.class",
+            "{projectRoot}/build/resources/main/application.properties",
+            "{workspaceRoot}/library/build/libs/library-0.0.1-SNAPSHOT.jar"
+          ],
+          "outputs": [
+            "{projectRoot}/build/libs/application2-0.0.1-SNAPSHOT.jar"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar",
+            "application2:resolveMainClassName"
+          ],
+          "metadata": {
+            "description": "Assembles an executable jar archive containing the main classes and their dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:bootJar",
+          "options": { "cwd": "proj" }
+        },
+        "bootRun": {
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar",
+            "application2:resolveMainClassName"
+          ],
+          "metadata": {
+            "description": "Runs this project as a Spring Boot application.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:bootRun",
+          "options": { "cwd": "proj" }
+        },
+        "bootTestRun": {
+          "cache": true,
+          "dependsOn": [
+            "application2:testClasses",
+            "application2:compileTestJava",
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar",
+            "application2:resolveTestMainClassName"
+          ],
+          "metadata": {
+            "description": "Runs this project as a Spring Boot application using the test runtime classpath.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:bootTestRun",
+          "options": { "cwd": "proj" }
+        },
+        "build": {
+          "cache": true,
+          "dependsOn": ["application2:check", "application2:assemble"],
+          "metadata": {
+            "description": "Assembles and tests this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:build",
+          "options": { "cwd": "proj" }
+        },
+        "buildDependents": {
+          "cache": true,
+          "dependsOn": ["application2:build"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects that depend on it.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:buildDependents",
+          "options": { "cwd": "proj" }
+        },
+        "buildEnvironment": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all buildscript dependencies declared in project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:buildEnvironment",
+          "options": { "cwd": "proj" }
+        },
+        "buildNeeded": {
+          "cache": true,
+          "dependsOn": ["application2:build", "library:buildNeeded"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects it depends on.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:buildNeeded",
+          "options": { "cwd": "proj" }
+        },
+        "check": {
+          "cache": true,
+          "dependsOn": ["application2:test"],
+          "metadata": {
+            "description": "Runs all checks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:check",
+          "options": { "cwd": "proj" }
+        },
+        "classes": {
+          "cache": true,
+          "dependsOn": [
+            "application2:compileJava",
+            "application2:processResources"
+          ],
+          "metadata": {
+            "description": "Assembles main classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:classes",
+          "options": { "cwd": "proj" }
+        },
+        "clean": {
+          "cache": true,
+          "metadata": {
+            "description": "Deletes the build directory.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:clean",
+          "options": { "cwd": "proj" }
+        },
+        "compileJava": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/application/DemoApplication2.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/main",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/main",
+            "{projectRoot}/build/generated/sources/headers/java/main",
+            "{projectRoot}/build/tmp/compileJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": ["library:jar"],
+          "metadata": {
+            "description": "Compiles main Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:compileJava",
+          "options": { "cwd": "proj" }
+        },
+        "compileTestJava": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test9.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test5.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test4.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test10.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test8.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test3.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test2.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test7.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test6.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Compiles test Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:compileTestJava",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test9": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test9.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test9.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test9",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test5": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test5.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test5.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test5",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test4": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test4.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test4.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test4",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test10": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test10.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test10.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test10",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test8": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test8.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test8.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test8",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test3": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test3.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test3.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test3",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test2": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test2.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test2.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test2",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test7": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test7.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test7.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test7",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test6": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test6.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test6.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test6",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication2Test": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application2/src/test/java/com/example/multimodule/application/DemoApplication2Test.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test --tests DemoApplication2Test",
+          "options": { "cwd": "proj" }
+        },
+        "ci": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test9.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test5.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test4.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test10.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test8.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test3.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test2.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test7.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test6.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication2Test.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            {
+              "target": "ci--DemoApplication2Test9",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test5",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test4",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test10",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test8",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test3",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test2",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test7",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test6",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication2Test",
+              "projects": "self",
+              "params": "forward"
+            }
+          ],
+          "metadata": {
+            "description": "Runs Gradle Tests in CI",
+            "technologies": ["Gradle"]
+          },
+          "options": { "cwd": "proj" },
+          "executor": "nx:noop"
+        },
+        "components": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the components produced by project \u0027:application2\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:components",
+          "options": { "cwd": "proj" }
+        },
+        "dependencies": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all dependencies declared in project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:dependencies",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyInsight": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the insight into a specific dependency in project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:dependencyInsight",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyManagement": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependency management declared in project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:dependencyManagement",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:dependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "dependentComponents": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependent components of components in project \u0027:application2\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:dependentComponents",
+          "options": { "cwd": "proj" }
+        },
+        "help": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays a help message.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:help",
+          "options": { "cwd": "proj" }
+        },
+        "htmlDependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates an HTML report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:htmlDependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "jar": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/application/DemoApplication2.class",
+            "{projectRoot}/build/resources/main/application.properties",
+            "{projectRoot}/build/tmp/jar/MANIFEST.MF"
+          ],
+          "outputs": [
+            "{projectRoot}/build/libs/application2-0.0.1-SNAPSHOT-plain.jar"
+          ],
+          "cache": true,
+          "dependsOn": ["application2:classes", "application2:compileJava"],
+          "metadata": {
+            "description": "Assembles a jar archive containing the classes of the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:jar",
+          "options": { "cwd": "proj" }
+        },
+        "javaToolchains": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the detected java toolchains.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:javaToolchains",
+          "options": { "cwd": "proj" }
+        },
+        "javadoc": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/application/DemoApplication2.java"
+          ],
+          "outputs": ["{projectRoot}/build/docs/javadoc"],
+          "cache": true,
+          "dependsOn": [
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Generates Javadoc API documentation for the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:javadoc",
+          "options": { "cwd": "proj" }
+        },
+        "model": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configuration model of project \u0027:application2\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:model",
+          "options": { "cwd": "proj" }
+        },
+        "outgoingVariants": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the outgoing variants of project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:outgoingVariants",
+          "options": { "cwd": "proj" }
+        },
+        "processResources": {
+          "inputs": ["{projectRoot}/src/main/resources/application.properties"],
+          "outputs": ["{projectRoot}/build/resources/main"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes main resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:processResources",
+          "options": { "cwd": "proj" }
+        },
+        "processTestResources": {
+          "outputs": ["{projectRoot}/build/resources/test"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes test resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:processTestResources",
+          "options": { "cwd": "proj" }
+        },
+        "projectReport": {
+          "cache": true,
+          "dependsOn": [
+            "application2:taskReport",
+            "application2:dependencyReport",
+            "application2:propertyReport",
+            "application2:htmlDependencyReport"
+          ],
+          "metadata": {
+            "description": "Generates a report about your project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:projectReport",
+          "options": { "cwd": "proj" }
+        },
+        "projectReportAll": {
+          "cache": true,
+          "dependsOn": ["application2:projectReport"],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :application2:projectReportAll",
+          "options": { "cwd": "proj" }
+        },
+        "projects": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the sub-projects of project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:projects",
+          "options": { "cwd": "proj" }
+        },
+        "properties": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the properties of project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:properties",
+          "options": { "cwd": "proj" }
+        },
+        "propertyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/properties.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your properties.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:propertyReport",
+          "options": { "cwd": "proj" }
+        },
+        "resolvableConfigurations": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configurations that can be resolved in project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:resolvableConfigurations",
+          "options": { "cwd": "proj" }
+        },
+        "resolveMainClassName": {
+          "outputs": ["{projectRoot}/build/resolvedMainClassName"],
+          "cache": true,
+          "dependsOn": ["application2:classes", "application2:compileJava"],
+          "metadata": {
+            "description": "Resolves the name of the application\u0027s main class.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:resolveMainClassName",
+          "options": { "cwd": "proj" }
+        },
+        "resolveTestMainClassName": {
+          "outputs": ["{projectRoot}/build/resolvedMainTestClassName"],
+          "cache": true,
+          "dependsOn": [
+            "application2:testClasses",
+            "application2:compileTestJava",
+            "application2:classes",
+            "application2:compileJava"
+          ],
+          "metadata": {
+            "description": "Resolves the name of the application\u0027s test main class.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:resolveTestMainClassName",
+          "options": { "cwd": "proj" }
+        },
+        "taskReport": {
+          "outputs": ["{projectRoot}/build/reports/project/tasks.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your tasks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:taskReport",
+          "options": { "cwd": "proj" }
+        },
+        "tasks": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the tasks runnable from project \u0027:application2\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:tasks",
+          "options": { "cwd": "proj" }
+        },
+        "test": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test9.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test8.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test6.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test10.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test4.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test2.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test5.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test7.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication2Test3.class"
+          ],
+          "outputs": [
+            "{projectRoot}/build/test-results/test/binary",
+            "{projectRoot}/build/reports/tests/test",
+            "{projectRoot}/build/test-results/test"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application2:compileTestJava",
+            "application2:testClasses",
+            "application2:classes",
+            "application2:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs the test suite.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:test",
+          "options": { "cwd": "proj" }
+        },
+        "testClasses": {
+          "cache": true,
+          "dependsOn": [
+            "application2:processTestResources",
+            "application2:compileTestJava"
+          ],
+          "metadata": {
+            "description": "Assembles test classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application2:testClasses",
+          "options": { "cwd": "proj" }
+        }
+      },
+      "metadata": {
+        "targetGroups": {
+          "build": [
+            "assemble",
+            "bootBuildImage",
+            "bootJar",
+            "build",
+            "buildDependents",
+            "buildNeeded",
+            "classes",
+            "clean",
+            "jar",
+            "resolveMainClassName",
+            "resolveTestMainClassName",
+            "testClasses"
+          ],
+          "application": ["bootRun", "bootTestRun"],
+          "help": [
+            "buildEnvironment",
+            "dependencies",
+            "dependencyInsight",
+            "dependencyManagement",
+            "help",
+            "javaToolchains",
+            "outgoingVariants",
+            "projects",
+            "properties",
+            "resolvableConfigurations",
+            "tasks"
+          ],
+          "verification": ["check", "ci", "test"],
+          "documentation": ["javadoc"],
+          "reporting": ["projectReport"]
+        },
+        "technologies": ["Gradle"]
+      },
+      "name": "application2"
+    },
+    "proj/application3": {
+      "targets": {
+        "assemble": {
+          "cache": true,
+          "dependsOn": ["application3:jar", "application3:bootJar"],
+          "metadata": {
+            "description": "Assembles the outputs of this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:assemble",
+          "options": { "cwd": "proj" }
+        },
+        "bootBuildImage": {
+          "cache": true,
+          "dependsOn": ["application3:bootJar"],
+          "metadata": {
+            "description": "Builds an OCI image of the application using the output of the bootJar task",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:bootBuildImage",
+          "options": { "cwd": "proj" }
+        },
+        "bootJar": {
+          "inputs": [
+            "{projectRoot}/build/tmp/bootJar/MANIFEST.MF",
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/application/DemoApplication3.class",
+            "{projectRoot}/build/resources/main/application.properties",
+            "{workspaceRoot}/library/build/libs/library-0.0.1-SNAPSHOT.jar"
+          ],
+          "outputs": [
+            "{projectRoot}/build/libs/application3-0.0.1-SNAPSHOT.jar"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar",
+            "application3:resolveMainClassName"
+          ],
+          "metadata": {
+            "description": "Assembles an executable jar archive containing the main classes and their dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:bootJar",
+          "options": { "cwd": "proj" }
+        },
+        "bootRun": {
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar",
+            "application3:resolveMainClassName"
+          ],
+          "metadata": {
+            "description": "Runs this project as a Spring Boot application.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:bootRun",
+          "options": { "cwd": "proj" }
+        },
+        "bootTestRun": {
+          "cache": true,
+          "dependsOn": [
+            "application3:testClasses",
+            "application3:compileTestJava",
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar",
+            "application3:resolveTestMainClassName"
+          ],
+          "metadata": {
+            "description": "Runs this project as a Spring Boot application using the test runtime classpath.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:bootTestRun",
+          "options": { "cwd": "proj" }
+        },
+        "build": {
+          "cache": true,
+          "dependsOn": ["application3:check", "application3:assemble"],
+          "metadata": {
+            "description": "Assembles and tests this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:build",
+          "options": { "cwd": "proj" }
+        },
+        "buildDependents": {
+          "cache": true,
+          "dependsOn": ["application3:build"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects that depend on it.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:buildDependents",
+          "options": { "cwd": "proj" }
+        },
+        "buildEnvironment": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all buildscript dependencies declared in project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:buildEnvironment",
+          "options": { "cwd": "proj" }
+        },
+        "buildNeeded": {
+          "cache": true,
+          "dependsOn": ["application3:build", "library:buildNeeded"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects it depends on.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:buildNeeded",
+          "options": { "cwd": "proj" }
+        },
+        "check": {
+          "cache": true,
+          "dependsOn": ["application3:test"],
+          "metadata": {
+            "description": "Runs all checks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:check",
+          "options": { "cwd": "proj" }
+        },
+        "classes": {
+          "cache": true,
+          "dependsOn": [
+            "application3:compileJava",
+            "application3:processResources"
+          ],
+          "metadata": {
+            "description": "Assembles main classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:classes",
+          "options": { "cwd": "proj" }
+        },
+        "clean": {
+          "cache": true,
+          "metadata": {
+            "description": "Deletes the build directory.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:clean",
+          "options": { "cwd": "proj" }
+        },
+        "compileJava": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/application/DemoApplication3.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/main",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/main",
+            "{projectRoot}/build/generated/sources/headers/java/main",
+            "{projectRoot}/build/tmp/compileJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": ["library:jar"],
+          "metadata": {
+            "description": "Compiles main Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:compileJava",
+          "options": { "cwd": "proj" }
+        },
+        "compileTestJava": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test3.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test2.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test9.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test5.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test4.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test8.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test7.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test10.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test6.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Compiles test Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:compileTestJava",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test3": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test3.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test3.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test3",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test2": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test2.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test2.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test2",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test9": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test9.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test9.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test9",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test5": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test5.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test5.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test5",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test4": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test4.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test4.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test4",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test8": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test8.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test8.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test8",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test7": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test7.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test7.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test7",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test10": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test10.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test10.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test10",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test6": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test6.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test6.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test6",
+          "options": { "cwd": "proj" }
+        },
+        "ci--DemoApplication3Test": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs Gradle test proj/application3/src/test/java/com/example/multimodule/application/DemoApplication3Test.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test --tests DemoApplication3Test",
+          "options": { "cwd": "proj" }
+        },
+        "ci": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test3.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test2.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test9.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test5.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test4.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test8.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test7.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test10.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test6.java",
+            "{projectRoot}/src/test/java/com/example/multimodule/application/DemoApplication3Test.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            {
+              "target": "ci--DemoApplication3Test3",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test2",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test9",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test5",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test4",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test8",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test7",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test10",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test6",
+              "projects": "self",
+              "params": "forward"
+            },
+            {
+              "target": "ci--DemoApplication3Test",
+              "projects": "self",
+              "params": "forward"
+            }
+          ],
+          "metadata": {
+            "description": "Runs Gradle Tests in CI",
+            "technologies": ["Gradle"]
+          },
+          "options": { "cwd": "proj" },
+          "executor": "nx:noop"
+        },
+        "components": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the components produced by project \u0027:application3\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:components",
+          "options": { "cwd": "proj" }
+        },
+        "dependencies": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all dependencies declared in project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:dependencies",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyInsight": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the insight into a specific dependency in project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:dependencyInsight",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyManagement": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependency management declared in project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:dependencyManagement",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:dependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "dependentComponents": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependent components of components in project \u0027:application3\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:dependentComponents",
+          "options": { "cwd": "proj" }
+        },
+        "help": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays a help message.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:help",
+          "options": { "cwd": "proj" }
+        },
+        "htmlDependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates an HTML report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:htmlDependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "jar": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/application/DemoApplication3.class",
+            "{projectRoot}/build/resources/main/application.properties",
+            "{projectRoot}/build/tmp/jar/MANIFEST.MF"
+          ],
+          "outputs": [
+            "{projectRoot}/build/libs/application3-0.0.1-SNAPSHOT-plain.jar"
+          ],
+          "cache": true,
+          "dependsOn": ["application3:classes", "application3:compileJava"],
+          "metadata": {
+            "description": "Assembles a jar archive containing the classes of the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:jar",
+          "options": { "cwd": "proj" }
+        },
+        "javaToolchains": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the detected java toolchains.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:javaToolchains",
+          "options": { "cwd": "proj" }
+        },
+        "javadoc": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/application/DemoApplication3.java"
+          ],
+          "outputs": ["{projectRoot}/build/docs/javadoc"],
+          "cache": true,
+          "dependsOn": [
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Generates Javadoc API documentation for the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:javadoc",
+          "options": { "cwd": "proj" }
+        },
+        "model": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configuration model of project \u0027:application3\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:model",
+          "options": { "cwd": "proj" }
+        },
+        "outgoingVariants": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the outgoing variants of project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:outgoingVariants",
+          "options": { "cwd": "proj" }
+        },
+        "processResources": {
+          "inputs": ["{projectRoot}/src/main/resources/application.properties"],
+          "outputs": ["{projectRoot}/build/resources/main"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes main resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:processResources",
+          "options": { "cwd": "proj" }
+        },
+        "processTestResources": {
+          "outputs": ["{projectRoot}/build/resources/test"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes test resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:processTestResources",
+          "options": { "cwd": "proj" }
+        },
+        "projectReport": {
+          "cache": true,
+          "dependsOn": [
+            "application3:taskReport",
+            "application3:dependencyReport",
+            "application3:propertyReport",
+            "application3:htmlDependencyReport"
+          ],
+          "metadata": {
+            "description": "Generates a report about your project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:projectReport",
+          "options": { "cwd": "proj" }
+        },
+        "projectReportAll": {
+          "cache": true,
+          "dependsOn": ["application3:projectReport"],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :application3:projectReportAll",
+          "options": { "cwd": "proj" }
+        },
+        "projects": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the sub-projects of project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:projects",
+          "options": { "cwd": "proj" }
+        },
+        "properties": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the properties of project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:properties",
+          "options": { "cwd": "proj" }
+        },
+        "propertyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/properties.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your properties.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:propertyReport",
+          "options": { "cwd": "proj" }
+        },
+        "resolvableConfigurations": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configurations that can be resolved in project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:resolvableConfigurations",
+          "options": { "cwd": "proj" }
+        },
+        "resolveMainClassName": {
+          "outputs": ["{projectRoot}/build/resolvedMainClassName"],
+          "cache": true,
+          "dependsOn": ["application3:classes", "application3:compileJava"],
+          "metadata": {
+            "description": "Resolves the name of the application\u0027s main class.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:resolveMainClassName",
+          "options": { "cwd": "proj" }
+        },
+        "resolveTestMainClassName": {
+          "outputs": ["{projectRoot}/build/resolvedMainTestClassName"],
+          "cache": true,
+          "dependsOn": [
+            "application3:testClasses",
+            "application3:compileTestJava",
+            "application3:classes",
+            "application3:compileJava"
+          ],
+          "metadata": {
+            "description": "Resolves the name of the application\u0027s test main class.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:resolveTestMainClassName",
+          "options": { "cwd": "proj" }
+        },
+        "taskReport": {
+          "outputs": ["{projectRoot}/build/reports/project/tasks.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your tasks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:taskReport",
+          "options": { "cwd": "proj" }
+        },
+        "tasks": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the tasks runnable from project \u0027:application3\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:tasks",
+          "options": { "cwd": "proj" }
+        },
+        "test": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test2.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test6.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test10.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test4.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test3.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test5.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test7.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test9.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/application/DemoApplication3Test8.class"
+          ],
+          "outputs": [
+            "{projectRoot}/build/test-results/test/binary",
+            "{projectRoot}/build/reports/tests/test",
+            "{projectRoot}/build/test-results/test"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "application3:compileTestJava",
+            "application3:testClasses",
+            "application3:classes",
+            "application3:compileJava",
+            "library:jar"
+          ],
+          "metadata": {
+            "description": "Runs the test suite.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:test",
+          "options": { "cwd": "proj" }
+        },
+        "testClasses": {
+          "cache": true,
+          "dependsOn": [
+            "application3:processTestResources",
+            "application3:compileTestJava"
+          ],
+          "metadata": {
+            "description": "Assembles test classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :application3:testClasses",
+          "options": { "cwd": "proj" }
+        }
+      },
+      "metadata": {
+        "targetGroups": {
+          "build": [
+            "assemble",
+            "bootBuildImage",
+            "bootJar",
+            "build",
+            "buildDependents",
+            "buildNeeded",
+            "classes",
+            "clean",
+            "jar",
+            "resolveMainClassName",
+            "resolveTestMainClassName",
+            "testClasses"
+          ],
+          "application": ["bootRun", "bootTestRun"],
+          "help": [
+            "buildEnvironment",
+            "dependencies",
+            "dependencyInsight",
+            "dependencyManagement",
+            "help",
+            "javaToolchains",
+            "outgoingVariants",
+            "projects",
+            "properties",
+            "resolvableConfigurations",
+            "tasks"
+          ],
+          "verification": ["check", "ci", "test"],
+          "documentation": ["javadoc"],
+          "reporting": ["projectReport"]
+        },
+        "technologies": ["Gradle"]
+      },
+      "name": "application3"
+    },
+    "proj/library": {
+      "targets": {
+        "assemble": {
+          "cache": true,
+          "dependsOn": ["library:jar"],
+          "metadata": {
+            "description": "Assembles the outputs of this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:assemble",
+          "options": { "cwd": "proj" }
+        },
+        "build": {
+          "cache": true,
+          "dependsOn": ["library:check", "library:assemble"],
+          "metadata": {
+            "description": "Assembles and tests this project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:build",
+          "options": { "cwd": "proj" }
+        },
+        "buildDependents": {
+          "cache": true,
+          "dependsOn": [
+            "application2:buildDependents",
+            "application3:buildDependents",
+            "application:buildDependents",
+            "library:build"
+          ],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects that depend on it.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:buildDependents",
+          "options": { "cwd": "proj" }
+        },
+        "buildEnvironment": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all buildscript dependencies declared in project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:buildEnvironment",
+          "options": { "cwd": "proj" }
+        },
+        "buildNeeded": {
+          "cache": true,
+          "dependsOn": ["library:build"],
+          "metadata": {
+            "description": "Assembles and tests this project and all projects it depends on.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:buildNeeded",
+          "options": { "cwd": "proj" }
+        },
+        "check": {
+          "cache": true,
+          "dependsOn": ["library:test"],
+          "metadata": {
+            "description": "Runs all checks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:check",
+          "options": { "cwd": "proj" }
+        },
+        "classes": {
+          "cache": true,
+          "dependsOn": ["library:compileJava", "library:processResources"],
+          "metadata": {
+            "description": "Assembles main classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:classes",
+          "options": { "cwd": "proj" }
+        },
+        "clean": {
+          "cache": true,
+          "metadata": {
+            "description": "Deletes the build directory.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:clean",
+          "options": { "cwd": "proj" }
+        },
+        "compileJava": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/service/MyService.java",
+            "{projectRoot}/src/main/java/com/example/multimodule/service/ServiceProperties.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/main",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/main",
+            "{projectRoot}/build/generated/sources/headers/java/main",
+            "{projectRoot}/build/tmp/compileJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "metadata": {
+            "description": "Compiles main Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:compileJava",
+          "options": { "cwd": "proj" }
+        },
+        "compileTestJava": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/service/MyServiceTest.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": ["library:classes", "library:compileJava"],
+          "metadata": {
+            "description": "Compiles test Java source.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:compileTestJava",
+          "options": { "cwd": "proj" }
+        },
+        "ci--MyServiceTest": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/service/MyServiceTest.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": ["library:classes", "library:compileJava"],
+          "metadata": {
+            "description": "Runs Gradle test proj/library/src/test/java/com/example/multimodule/service/MyServiceTest.java in CI",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:test --tests MyServiceTest",
+          "options": { "cwd": "proj" }
+        },
+        "ci": {
+          "inputs": [
+            "{projectRoot}/src/test/java/com/example/multimodule/service/MyServiceTest.java"
+          ],
+          "outputs": [
+            "{projectRoot}/build/classes/java/test",
+            "{projectRoot}/build/generated/sources/annotationProcessor/java/test",
+            "{projectRoot}/build/generated/sources/headers/java/test",
+            "{projectRoot}/build/tmp/compileTestJava/previous-compilation-data.bin"
+          ],
+          "cache": true,
+          "dependsOn": [
+            {
+              "target": "ci--MyServiceTest",
+              "projects": "self",
+              "params": "forward"
+            }
+          ],
+          "metadata": {
+            "description": "Runs Gradle Tests in CI",
+            "technologies": ["Gradle"]
+          },
+          "options": { "cwd": "proj" },
+          "executor": "nx:noop"
+        },
+        "components": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the components produced by project \u0027:library\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:components",
+          "options": { "cwd": "proj" }
+        },
+        "dependencies": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays all dependencies declared in project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:dependencies",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyInsight": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the insight into a specific dependency in project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:dependencyInsight",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyManagement": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependency management declared in project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:dependencyManagement",
+          "options": { "cwd": "proj" }
+        },
+        "dependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:dependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "dependentComponents": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the dependent components of components in project \u0027:library\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:dependentComponents",
+          "options": { "cwd": "proj" }
+        },
+        "help": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays a help message.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:help",
+          "options": { "cwd": "proj" }
+        },
+        "htmlDependencyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/dependencies"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates an HTML report about your library dependencies.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:htmlDependencyReport",
+          "options": { "cwd": "proj" }
+        },
+        "jar": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/service/MyService.class",
+            "{projectRoot}/build/classes/java/main/com/example/multimodule/service/ServiceProperties.class",
+            "{projectRoot}/build/tmp/jar/MANIFEST.MF"
+          ],
+          "outputs": ["{projectRoot}/build/libs/library-0.0.1-SNAPSHOT.jar"],
+          "cache": true,
+          "dependsOn": ["library:classes", "library:compileJava"],
+          "metadata": {
+            "description": "Assembles a jar archive containing the classes of the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:jar",
+          "options": { "cwd": "proj" }
+        },
+        "javaToolchains": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the detected java toolchains.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:javaToolchains",
+          "options": { "cwd": "proj" }
+        },
+        "javadoc": {
+          "inputs": [
+            "{projectRoot}/src/main/java/com/example/multimodule/service/MyService.java",
+            "{projectRoot}/src/main/java/com/example/multimodule/service/ServiceProperties.java"
+          ],
+          "outputs": ["{projectRoot}/build/docs/javadoc"],
+          "cache": true,
+          "dependsOn": ["library:classes", "library:compileJava"],
+          "metadata": {
+            "description": "Generates Javadoc API documentation for the \u0027main\u0027 feature.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:javadoc",
+          "options": { "cwd": "proj" }
+        },
+        "model": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configuration model of project \u0027:library\u0027. [deprecated]",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:model",
+          "options": { "cwd": "proj" }
+        },
+        "outgoingVariants": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the outgoing variants of project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:outgoingVariants",
+          "options": { "cwd": "proj" }
+        },
+        "processResources": {
+          "outputs": ["{projectRoot}/build/resources/main"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes main resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:processResources",
+          "options": { "cwd": "proj" }
+        },
+        "processTestResources": {
+          "outputs": ["{projectRoot}/build/resources/test"],
+          "cache": true,
+          "metadata": {
+            "description": "Processes test resources.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:processTestResources",
+          "options": { "cwd": "proj" }
+        },
+        "projectReport": {
+          "cache": true,
+          "dependsOn": [
+            "library:taskReport",
+            "library:dependencyReport",
+            "library:propertyReport",
+            "library:htmlDependencyReport"
+          ],
+          "metadata": {
+            "description": "Generates a report about your project.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:projectReport",
+          "options": { "cwd": "proj" }
+        },
+        "projectReportAll": {
+          "cache": true,
+          "dependsOn": ["library:projectReport"],
+          "metadata": { "technologies": ["Gradle"] },
+          "command": "./gradlew :library:projectReportAll",
+          "options": { "cwd": "proj" }
+        },
+        "projects": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the sub-projects of project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:projects",
+          "options": { "cwd": "proj" }
+        },
+        "properties": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the properties of project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:properties",
+          "options": { "cwd": "proj" }
+        },
+        "propertyReport": {
+          "outputs": ["{projectRoot}/build/reports/project/properties.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your properties.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:propertyReport",
+          "options": { "cwd": "proj" }
+        },
+        "resolvableConfigurations": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the configurations that can be resolved in project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:resolvableConfigurations",
+          "options": { "cwd": "proj" }
+        },
+        "taskReport": {
+          "outputs": ["{projectRoot}/build/reports/project/tasks.txt"],
+          "cache": true,
+          "metadata": {
+            "description": "Generates a report about your tasks.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:taskReport",
+          "options": { "cwd": "proj" }
+        },
+        "tasks": {
+          "cache": true,
+          "metadata": {
+            "description": "Displays the tasks runnable from project \u0027:library\u0027.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:tasks",
+          "options": { "cwd": "proj" }
+        },
+        "test": {
+          "inputs": [
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/service/MyServiceTest.class",
+            "{projectRoot}/build/classes/java/test/com/example/multimodule/service/MyServiceTest$TestConfiguration.class"
+          ],
+          "outputs": [
+            "{projectRoot}/build/test-results/test/binary",
+            "{projectRoot}/build/reports/tests/test",
+            "{projectRoot}/build/test-results/test"
+          ],
+          "cache": true,
+          "dependsOn": [
+            "library:compileTestJava",
+            "library:testClasses",
+            "library:classes",
+            "library:compileJava"
+          ],
+          "metadata": {
+            "description": "Runs the test suite.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:test",
+          "options": { "cwd": "proj" }
+        },
+        "testClasses": {
+          "cache": true,
+          "dependsOn": [
+            "library:processTestResources",
+            "library:compileTestJava"
+          ],
+          "metadata": {
+            "description": "Assembles test classes.",
+            "technologies": ["Gradle"]
+          },
+          "command": "./gradlew :library:testClasses",
+          "options": { "cwd": "proj" }
+        }
+      },
+      "metadata": {
+        "targetGroups": {
+          "build": [
+            "assemble",
+            "build",
+            "buildDependents",
+            "buildNeeded",
+            "classes",
+            "clean",
+            "jar",
+            "testClasses"
+          ],
+          "help": [
+            "buildEnvironment",
+            "dependencies",
+            "dependencyInsight",
+            "dependencyManagement",
+            "help",
+            "javaToolchains",
+            "outgoingVariants",
+            "projects",
+            "properties",
+            "resolvableConfigurations",
+            "tasks"
+          ],
+          "verification": ["check", "ci", "test"],
+          "documentation": ["javadoc"],
+          "reporting": ["projectReport"]
+        },
+        "technologies": ["Gradle"]
+      },
+      "name": "library"
+    }
+  },
+  "dependencies": [
+    {
+      "source": "proj",
+      "target": "proj/application",
+      "sourceFile": "proj/build.gradle"
+    },
+    {
+      "source": "proj",
+      "target": "proj/application2",
+      "sourceFile": "proj/build.gradle"
+    },
+    {
+      "source": "proj",
+      "target": "proj/application3",
+      "sourceFile": "proj/build.gradle"
+    },
+    {
+      "source": "proj",
+      "target": "proj/library",
+      "sourceFile": "proj/build.gradle"
+    },
+    {
+      "source": "proj/application",
+      "target": "proj/library",
+      "sourceFile": "proj/application/build.gradle"
+    },
+    {
+      "source": "proj/application2",
+      "target": "proj/library",
+      "sourceFile": "proj/application2/build.gradle"
+    },
+    {
+      "source": "proj/application3",
+      "target": "proj/library",
+      "sourceFile": "proj/application3/build.gradle"
+    }
+  ]
+}
