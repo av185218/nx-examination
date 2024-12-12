@@ -26,17 +26,12 @@ export async function handleErrors(
       ) {
         title += ' ' + projectGraphError.cause.message + '.';
       }
-      if (isVerbose) {
-        title += ' See errors below.';
-      }
 
-      const bodyLines = isVerbose
-        ? formatErrorStackAndCause(projectGraphError)
-        : ['Pass --verbose to see the stacktraces.'];
+      title += ' See errors below.';
 
       output.error({
         title,
-        bodyLines: bodyLines,
+        bodyLines: formatErrorStackAndCause(projectGraphError),
       });
     } else {
       const lines = (err.message ? err.message : err.toString()).split('\n');

@@ -7,20 +7,11 @@ import { ProjectGraph } from '../config/project-graph';
 import { CreateNodesFunctionV2 } from './plugins/public-api';
 
 export class ProjectGraphError extends Error {
-  readonly #errors: Array<
-    | AggregateCreateNodesError
-    | MergeNodesError
-    | CreateMetadataError
-    | ProjectsWithNoNameError
-    | MultipleProjectsWithSameNameError
-    | ProcessDependenciesError
-    | WorkspaceValidityError
-  >;
   readonly #partialProjectGraph: ProjectGraph;
   readonly #partialSourceMaps: ConfigurationSourceMaps;
 
   constructor(
-    errors: Array<
+    private readonly errors: Array<
       | AggregateCreateNodesError
       | MergeNodesError
       | ProjectsWithNoNameError
@@ -36,12 +27,12 @@ export class ProjectGraphError extends Error {
       `Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.`
     );
     this.name = this.constructor.name;
-    this.#errors = errors;
+    this.errors = errors;
     this.#partialProjectGraph = partialProjectGraph;
     this.#partialSourceMaps = partialSourceMaps;
-    this.stack = `${this.message}\n  ${errors
+    this.stack = errors
       .map((error) => indentString(formatErrorStackAndCause(error), 2))
-      .join('\n')}`;
+      .join('\n');
   }
 
   /**
@@ -67,7 +58,7 @@ export class ProjectGraphError extends Error {
   }
 
   getErrors() {
-    return this.#errors;
+    return this.errors;
   }
 }
 
@@ -240,6 +231,32 @@ export class AggregateCreateNodesError extends Error {
       );
     }
   }
+}
+
+export function formatAggregateCreateNodesError(
+  error: AggregateCreateNodesError,
+  pluginName: string
+) {
+  error.message = `${
+    error.errors.length > 1 ? `${this.errors.length} errors` : 'An error'
+  } occurred while processing files for the ${pluginName} plugin.`;
+
+  const errorBodyLines = [];
+
+  const innerErrors = error.errors;
+  for (const [file, e] of innerErrors) {
+    if (file) {
+      errorBodyLines.push(`  - ${file}: ${e.message}`);
+    } else {
+      errorBodyLines.push(`  - ${e.message}`);
+    }
+    if (e.stack && process.env.NX_VERBOSE_LOGGING === 'true') {
+      const innerStackTrace = '    ' + e.stack.split('\n')?.join('\n    ');
+      errorBodyLines.push(innerStackTrace);
+    }
+  }
+
+  error.stack = errorBodyLines.join('\n');
 }
 
 export class MergeNodesError extends Error {
