@@ -1,7 +1,0 @@
-{
-  "name": "something",
-  "dependencies": {
-    "@isaacs/cliui": "^8.0.2",
-    "cliui": "^8.0.1"
-  }
-}
