@@ -1,7 +1,11 @@
 'use client';
 import { Fragment, useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { PlayIcon } from '@heroicons/react/24/outline';
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  PlayIcon,
+} from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import {
   CasewareIcon,
@@ -56,12 +60,21 @@ const testimonials: Testimonial[] = [
   {
     title: 'Customer story',
     subtitle:
-      'Scaling 700+ projects: How Nx Enterprise became a no-brainer for Caseware',
+      'Scaling 700+ projects: How Nx Enterprise became a no-brainer for Caseware.',
     metrics: [
-      { value: '700+', label: 'Monorepo projects scaled effortlessly' },
       {
-        value: 'Efficiency',
-        label: 'Unified workflows: frontend to backend',
+        value: 'Massive scale',
+        label:
+          '600–700 projects, unifying frontends and backends company wide.',
+      },
+      {
+        value: 'Instant impact',
+        label: 'Trialing Nx Enterprise cut build times immediately.',
+      },
+      {
+        value: 'Actionable insights',
+        label:
+          'Nx Cloud’s metrics uncovered inefficiencies across 10+ year old codebase.',
       },
     ],
     company: 'Caseware',
@@ -167,7 +180,6 @@ export function CustomerTestimonialCarousel(): JSX.Element {
   useEffect(() => {
     let timer: NodeJS.Timeout;
 
-    // Clear the current timer and start a new one
     if (!isOpen) {
       timer = setInterval(() => {
         setCurrentIndex((prevIndex) => {
@@ -177,7 +189,6 @@ export function CustomerTestimonialCarousel(): JSX.Element {
       }, slideLogoTimeOut);
     }
 
-    // Cleanup on unmount or when dependencies change
     return () => {
       clearInterval(timer);
     };
@@ -230,7 +241,7 @@ export function CustomerTestimonialCarousel(): JSX.Element {
             <div className="flex h-full flex-col justify-center space-y-8">
               {currentTestimonial.metrics?.map((metric, index) => (
                 <div key={index} className="space-y-2">
-                  <div className="text-4xl font-bold text-blue-500 lg:text-5xl">
+                  <div className="text-xl font-bold text-sky-600 lg:text-2xl">
                     {metric.value}
                   </div>
                   <div className="text-base text-slate-500 lg:text-lg dark:text-slate-400">
@@ -245,6 +256,19 @@ export function CustomerTestimonialCarousel(): JSX.Element {
         {/* Right side - Video Card */}
         <div className="col-span-2 md:col-span-3">
           <div className="flex items-center gap-4">
+            {/* Prev Button Mobile only */}
+            <button
+              disabled={currentIndex === 0}
+              title={`See ${testimonials[currentIndex - 1]?.company} again!`}
+              className="flex h-12 w-12 items-center justify-center rounded-full p-2 transition hover:text-slate-950 disabled:pointer-events-none disabled:opacity-0 md:hidden dark:hover:text-white"
+              onClick={() => {
+                setCurrentIndex(
+                  (currentIndex - 1 + testimonials.length) % testimonials.length
+                );
+              }}
+            >
+              <ChevronLeftIcon className="h-8 w-8" />
+            </button>
             <div
               className="group relative h-[450px] w-full cursor-pointer self-stretch overflow-hidden rounded-lg xl:shadow-2xl"
               onClick={() => setIsOpen(true)}
@@ -272,6 +296,19 @@ export function CustomerTestimonialCarousel(): JSX.Element {
                 </button>
               </div>
             </div>
+            {/* Next Button - Mobile only */}
+            <button
+              className="flex h-12 w-12 items-center justify-center rounded-full p-2 transition hover:text-slate-950 disabled:pointer-events-none disabled:opacity-0 md:hidden dark:hover:text-white"
+              disabled={currentIndex === testimonials.length - 1}
+              title={`Next ${testimonials[currentIndex + 1]?.company}!`}
+              onClick={() => {
+                setCurrentIndex(
+                  (currentIndex + 1 + testimonials.length) % testimonials.length
+                );
+              }}
+            >
+              <ChevronRightIcon className="h-8 w-8" />
+            </button>
           </div>
 
           {/* Mobile Navigation display dots */}
@@ -290,7 +327,7 @@ export function CustomerTestimonialCarousel(): JSX.Element {
         </div>
       </div>
 
-      {/* Carosel Navigation */}
+      {/* Carosel Navigation - Larger screens */}
       <div className="relative mx-auto hidden max-w-7xl grid-cols-6 items-center justify-center px-4 pt-16 md:grid">
         {testimonials.map(({ company, logo }, i) => (
           <button
@@ -308,7 +345,7 @@ export function CustomerTestimonialCarousel(): JSX.Element {
               className={`${logo.height} ${logo.width} transition-transform duration-300`}
             />
 
-            {/* Progress Bar at the Top */}
+            {/* Progress Bar */}
             {i === currentIndex && !isOpen && (
               <div className="absolute left-0 top-0 h-[2px] w-full overflow-hidden bg-gray-300/80 transition-all">
                 <div
